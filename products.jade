@@ -1,0 +1,28 @@
+include base
++base()
+  section#products
+    .container
+      h2.home-heading.text-center Products
+      mixin prod(title, link, img)
+        .col-md-3
+          .product
+            img(src=img alt=title+" img.")
+            a(href=link title=title)
+          h6.text-center=title
+      h3.home-subheading Brands
+      hr
+      .row.brands
+        +prod("A4", "http://www.4logoapparel.com/cgi-bin/hw/chwDisplaySubcategoryStyles_Submit.w?hwCN=197208212203201210201214205199180214205199201200&hwCNCD=likOamsDPlciaczn&catCode=all&subcatCode=A4", "http://www.4logoapparel.com/images/alp/millLarge/a4.jpg")
+        +prod("Dickies", "http://www.4logoapparel.com/cgi-bin/hw/chwDisplaySubcategoryStyles_Submit.w?hwCN=197208212203201210201214205199180214205199201200&hwCNCD=likOamsDPlciaczn&catCode=all&subcatCode=WD", "http://www.4logoapparel.com/images/alp/millLarge/wd.jpg")
+        +prod("Adidas", "http://www.4logoapparel.com/cgi-bin/hw/chwDisplaySubcategoryStyles_Submit.w?hwCN=197208212203201210201214205199180214205199201200&hwCNCD=likOamsDPlciaczn&catCode=all&subcatCode=04", "http://www.4logoapparel.com/images/alp/millLarge/04.jpg")
+        +prod("Champion", "http://www.4logoapparel.com/cgi-bin/hw/chwDisplaySubcategoryStyles_Submit.w?hwCN=197208212203201210201214205199180214205199201200&hwCNCD=likOamsDPlciaczn&catCode=all&subcatCode=38", "http://www.4logoapparel.com/images/alp/millLarge/38.jpg")
+      
+      h3.home-subheading Items
+      hr
+      .row.items
+        +prod("T-Shirts","http://www.companycasuals.com/azembroidme/b.jsp?id=125&parentId=1", "http://www.companycasuals.com/images/PC61YTN.jpg")
+        +prod("Sweaters", "http://www.companycasuals.com/azembroidme/b.jsp?id=127&parentId=1", "http://www.companycasuals.com/images/996YTN.jpg")
+        +prod("Caps", "http://www.companycasuals.com/azembroidme/b.jsp?id=126&parentId=1", "http://www.companycasuals.com/images/5bcuTN.jpg")
+        +prod("Outerwear", "http://www.companycasuals.com/azembroidme/b.jsp?id=117&parentId=1", "http://www.companycasuals.com/images/J749TN.jpg")
+
+
