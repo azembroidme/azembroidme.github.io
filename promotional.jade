@@ -1,0 +1,24 @@
+include base
++base()
+  section#promo
+    .container
+      h2.home-heading.text-center Promotional
+      mixin pro(title, src, desc, link)
+        .col-md-4
+          h3=title
+          .pro-img
+            img(src=src)
+          p=desc
+            br
+            br
+            a.btn.btn-primary(href=link target="_blank" role="button") View &#187;
+      .row
+        +pro("Apparel Catalog", "http://azembroidme.com/admin/ckfinder/userfiles/images/images/apparel.jpg", "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.","http://www.4logoapparel.com/")
+        +pro("Promotional Products","http://azembroidme.com/admin/ckfinder/userfiles/images/images/promotional-products.jpg", "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.","http://azembroidme.norwood.com/")
+        +pro("Brand Book","http://azembroidme.com/admin/ckfinder/userfiles/images/images/brand-book.jpg" , "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.", "http://www.brandbookonline.com/vip")
+      .row
+        +pro("Bag Products","http://azembroidme.com/admin/ckfinder/userfiles/images/images/bag-products.jpg" , "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.","http://www.gemline.com/Gemline/")
+        +pro("Casual Wear","http://azembroidme.com/admin/ckfinder/userfiles/images/images/casual-wear.jpg" , "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.","http://www.companycasuals.com/azembroidme/start.jsp")
+        +pro("Sports Wear","http://azembroidme.com/admin/ckfinder/userfiles/images/images/sports-wear.jpg" , "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.","http://www.forsportswear.com/")
+      .row
+        +pro("Uniforms", "http://azembroidme.com/admin/ckfinder/userfiles/images/images/uniforms.jpg", "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.","http://www.vfimagewear.com/")

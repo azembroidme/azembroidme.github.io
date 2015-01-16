@@ -1,0 +1,64 @@
+include base
++base()
+  section#intro
+    #intro-carousel.carousel.slide(data-ride="carousel")
+      ol.carousel-indicators
+        li(data-target="#intro-carousel" data-slide-to="0")
+        li(data-target="#intro-carousel" data-slide-to="1")
+        li.active(data-target="#intro-carousel" data-slide-to="2")
+      .carousel-inner(role="listbox")
+        .item.active
+          img(src="img/71H.jpg" alt="First slide")
+          .carousel-caption.text-left
+            h1 EmbroidMe
+            h2 Needlecraft
+        .item
+          img(src="https://ununsplash.imgix.net/photo-1416339698674-4f118dd3388b?fit=crop&fm=jpg&h=1400&q=75&w=1050" alt="Second slide")
+          .carousel-caption
+            h2 Something else about EmbroidMe
+            p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. 
+        .item
+          img(src="https://ununsplash.imgix.net/photo-1416339672936-7fe434088e8c?fit=crop&fm=jpg&h=800&q=75&w=1050" alt="Third slide")
+          .carousel-caption
+            h2 Another EmbroidMe headline.
+            p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+      a.left.carousel-control(href="#intro-carousel" role="button" data-slide="prev")
+        span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+        span.sr-only Previous
+      a.right.carousel-control(href="#intro-carousel" role="button" data-slide="next")
+        span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+        span.sr-only Next
+
+
+  section#services
+    .container
+      h2.home-heading.text-center Services
+      +rimg("Embroidery & Screen Printing", "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.", "https://unsplash.imgix.net/35/JOd4DPGLThifgf38Lpgj_IMG.jpg?fit=crop&fm=jpg&h=700&q=75&w=1050")
+      hr
+      +limg("Outerwear & Team Wear", "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.", "https://unsplash.imgix.net/35/JOd4DPGLThifgf38Lpgj_IMG.jpg?fit=crop&fm=jpg&h=700&q=75&w=1050")
+      hr
+      +rimg("Wedding & Social Stationary", "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.", "https://unsplash.imgix.net/35/JOd4DPGLThifgf38Lpgj_IMG.jpg?fit=crop&fm=jpg&h=700&q=75&w=1050")
+      hr
+      .row
+        video(controls onended="playNextVideo()"): source(src="img/video1.mp4" type="video/mp4")
+
+
+  section#reviews
+    .container
+      h2.home-heading.text-center Testimonials
+      mixin review(name, rev)
+        .col-md-9
+          h3.featurette-heading=name
+          p.lead=rev
+      mixin face(img)
+        .col-md-3.face: img(src=img alt="A customer.")
+      .row
+        +review("Kerem", "I'm truly thrilled with the design and embroidery talent of EmbroidMe. They're perfectionists to the highest level and focus on customer satisfaction. I'd recommend them ten times out of ten to anyone looking for great embroidery.")
+        +face("https://s3.amazonaws.com/uifaces/faces/twitter/kerem/128.jpg")
+      .row.buffer
+        +face("https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg")
+        +review("Lexy", "EmbroidMe has unfailingly delivered extraordinary jobs with the projects I give them. I've worked with them over a dozen times and they've never once failed to impress me with their keen design eye and their ability to complete projects in a timely and cost-effective manner.")
+      .row.buffer
+        +review("Rohi", "I just. I can't even. Wow. EmbroidMe's done it again. It's hard not to get excited when working with EmbroidMe again. I keep telling myself each time: \"There's no way they'll be able to top the last project I gave them\". And whadayaknow they do every time.")
+        +face("https://s3.amazonaws.com/uifaces/faces/twitter/rohixx/128.jpg")
+

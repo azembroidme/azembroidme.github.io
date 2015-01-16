@@ -1,0 +1,86 @@
+mixin base()
+  doctype html
+  html(lang="en")
+    head
+      title EmbroidMe
+      meta(charset="utf-8")
+      meta(name="author" content="")
+      meta(name="description" content="")
+      meta(name="keywords" content="EmbroidMe")
+      meta(http-equiv="X-UA-Compatible" content="IE=edge")
+      meta(name="viewport" content="width=device-width, initial-scale=1")
+      link(href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css")
+      link(href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css")
+      link(href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet")
+      link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css")
+      link(href="css/misc.css" rel="stylesheet" type="text/css")
+      link(href="css/index.css" rel="stylesheet" type="text/css")
+    body
+      nav.navbar.navbar-fixed-top
+        .container
+          .navbar-header
+            .navbar-brand EmbroidMe
+            button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar")
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+          #navbar.navbar-collapse.collapse
+            ul.nav.navbar-nav.navbar-right
+              li: a(href="index.html") Home
+              li: a(href="promotional.html") Promotional
+              li: a(href="products.html") Products
+              li: a(href="about.html") About
+              li: a(href="contact.html") Contact
+      block
+      footer.text-center
+        .footer-above.bg-primary
+          .container
+            .row
+              .footer-col.col-md-4.text-left
+                h3 Contact
+                p.hover-black
+                  i.fa.fa-fw.fa-phone
+                  a(href="tel:4809989199") 480-998-9199
+                p.hover-black
+                  i.fa.fa-fw.fa-envelope
+                  a(href="mailto:scottsdale@azembroidme.com") scottsdale@azembroidme.com
+                p.hover-black
+                  i.fa.fa-fw.fa-map-marker
+                  | 6245 E. Bell Road Scottsdale, AZ 85254
+              .footer-col.col-md-4
+                h3 Find us on the web
+                ul.list-inline
+                  li: a.btn-social.btn-outline(href="#"): i.fa.fa-fw.fa-facebook
+                  li: a.btn-social.btn-outline(href="#"): i.fa.fa-fw.fa-twitter
+                  li: a.btn-social.btn-outline(href="#"): i.fa.fa-fw.fa-linkedin
+              .footer-col.col-md-4.text-right
+                h3 About EmbroidMe
+                p We're a Scottsdale-based <br/> needlecraft business that provides <br/> high-quality, affordable embroideries.
+        .footer-below
+          .container
+            .row
+              .col-lg-12 &#169; EmbroidMe 2014. All rights reserved.
+      script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+      script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js")
+      script(src="js/index.js" type="text/javascript")
+
+
+
+
+
+
+
+
+mixin rimg(title, desc, img)
+  .row
+    .col-md-7
+      h3.featurette-heading=title
+      p.lead=desc
+    .col-md-5: .sv-img.pull-right: img.featurette-image.img-responsive(src=img alt="400x400")
+mixin limg(title, desc, img)
+  .row
+    .col-md-5: .sv-img.pull-left: img.featurette-image.img-responsive(src=img alt="400x400")
+    .col-md-7
+      h3.featurette-heading=title
+      p.lead=desc
