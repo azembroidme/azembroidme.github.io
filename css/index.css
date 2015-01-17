@@ -352,7 +352,11 @@ a:link {
 
 
 
-
+@media all and (max-width: 520px) {
+  .footer-col {
+    text-align: center !important;
+  }
+}
 
 
 
