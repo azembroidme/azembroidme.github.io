@@ -33,11 +33,11 @@ include base
   section#services
     .container
       h2.home-heading.text-center Services
-      +rimg("Embroidery & Screen Printing", "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.", "https://unsplash.imgix.net/35/JOd4DPGLThifgf38Lpgj_IMG.jpg?fit=crop&fm=jpg&h=700&q=75&w=1050")
+      +rimg("Embroidery & Screen Printing", "EmbroidMe provides professional, custom embroidery services, custom screen printing & apparel by skilled designers. We provide this embroidery service at a highly competitive price.", "https://unsplash.imgix.net/35/JOd4DPGLThifgf38Lpgj_IMG.jpg?fit=crop&fm=jpg&h=700&q=75&w=1050")
       hr
-      +limg("Outerwear & Team Wear", "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.", "https://unsplash.imgix.net/35/JOd4DPGLThifgf38Lpgj_IMG.jpg?fit=crop&fm=jpg&h=700&q=75&w=1050")
+      +limg("Outerwear & Team Wear", "Our proficient needlecrafters can provide unparalleled quality in outerwear & team wear embroidery. Need your team's logo on custom clothing? We'll fill that need with unrivaled embroidery.", "https://unsplash.imgix.net/35/JOd4DPGLThifgf38Lpgj_IMG.jpg?fit=crop&fm=jpg&h=700&q=75&w=1050")
       hr
-      +rimg("Wedding & Social Stationary", "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.", "https://unsplash.imgix.net/35/JOd4DPGLThifgf38Lpgj_IMG.jpg?fit=crop&fm=jpg&h=700&q=75&w=1050")
+      +rimg("Wedding & Social Stationery", "Looking for unique & beautiful stationery? EmbroidMe excels at designing & creating stationery that accurately reflects your event & will leave a lasting impression upon those who recieve them.", "https://unsplash.imgix.net/35/JOd4DPGLThifgf38Lpgj_IMG.jpg?fit=crop&fm=jpg&h=700&q=75&w=1050")
       hr
       .row
         video(controls onended="playNextVideo()"): source(src="img/video1.mp4" type="video/mp4")
@@ -46,19 +46,14 @@ include base
   section#reviews
     .container
       h2.home-heading.text-center Testimonials
-      mixin review(name, rev)
-        .col-md-9
-          h3.featurette-heading=name
-          p.lead=rev
-      mixin face(img)
-        .col-md-3.face: img(src=img alt="A customer.")
       .row
-        +review("Kerem", "I'm truly thrilled with the design and embroidery talent of EmbroidMe. They're perfectionists to the highest level and focus on customer satisfaction. I'd recommend them ten times out of ten to anyone looking for great embroidery.")
-        +face("https://s3.amazonaws.com/uifaces/faces/twitter/kerem/128.jpg")
-      .row.buffer
-        +face("https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg")
-        +review("Lexy", "EmbroidMe has unfailingly delivered extraordinary jobs with the projects I give them. I've worked with them over a dozen times and they've never once failed to impress me with their keen design eye and their ability to complete projects in a timely and cost-effective manner.")
-      .row.buffer
-        +review("Rohi", "I just. I can't even. Wow. EmbroidMe's done it again. It's hard not to get excited when working with EmbroidMe again. I keep telling myself each time: \"There's no way they'll be able to top the last project I gave them\". And whadayaknow they do every time.")
-        +face("https://s3.amazonaws.com/uifaces/faces/twitter/rohixx/128.jpg")
+        .col-md-4
+          h3.featurette-heading.text-center Joseph
+          blockquote: p.lead EmbroidMe consistently delivers quality work. Their affinity for craftsmanship & design is impressive.
+        .col-md-4
+          h3.featurette-heading.text-center Nathan
+          blockquote: p.lead Thanks to EmbroidMe the great job they did for us. The shirts looked great at our trade show! Two thumbs up!
+        .col-md-4
+          h3.featurette-heading.text-center George
+          blockquote: p.lead It's hard not to get excited when working with EmbroidMe. Their cost-effective solutions have made a fan.
 

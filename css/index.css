@@ -159,19 +159,25 @@ nav .navbar-collapse {
   border: 4px solid black;
 }
 
-/*#reviews {
-  background: black;
-  color: white;
-}*/
 
-#reviews .face img{
-  display: block;
-  border: 4px solid black;
-  width: 128px;
-  height: 128px;
-  border-radius: 80px;
-  margin: 0 auto;
-  margin-top: 50px;
+
+blockquote {
+  border-left: 4px solid black;
+  border-bottom: 4px solid black;
+  margin: 5px 10px 5px 10px;
+  padding: 5px 3px 20px 20px;
+  quotes: "\201C""\201D";
+}
+blockquote:before {
+  color: black;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
 }
 
 
@@ -191,9 +197,6 @@ nav .navbar-collapse {
   width: 100%;
 }
 
-#products {
-
-}
 
 .product {
   position: relative;
