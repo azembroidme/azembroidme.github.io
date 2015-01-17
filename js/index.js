@@ -13,7 +13,6 @@ for (var i=0;i<actives.length;i++) {
 
 
 
-
 var videoCount = 1,
     videoPlayer = document.querySelector("video");
 
@@ -23,3 +22,4 @@ function playNextVideo(){
   videoPlayer.src = "img/video"+videoCount+".mp4";
   videoPlayer.play();
 };
+

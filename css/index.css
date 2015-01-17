@@ -352,13 +352,25 @@ a:link {
 
 
 
-@media all and (max-width: 520px) {
-  .footer-col {
-    text-align: center !important;
-  }
+@media only screen and (max-width: 990px) {
+  .footer-col {text-align: center !important;}
+  .carousel-inner {height: 400px;}
+  .carousel-inner .item {height: 400px;}
 }
 
+@media only screen and (min-width: 768px) and (max-width: 959px) {}
 
+@media only screen and (max-width: 767px) {
+  .carousel-control {display: none;}
+  .item img {top: 0px;}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .carousel-caption h1 {font-size: 12vw;}
+  .carousel-caption h2 {font-size: 8vw;}
+}
+
+@media only screen and (max-width: 479px) {}
 
 
 
