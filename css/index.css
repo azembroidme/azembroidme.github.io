@@ -355,14 +355,20 @@ a:link {
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .carousel-caption h1 {font-size: 12vw;}
   .carousel-caption h2 {font-size: 8vw;}
-  .item img {min-height: 80vh;}
+  .item img {
+    min-height: 80vh;
+    width: auto;
+  }
 }
 
 @media only screen and (max-width: 479px) {
   .carousel-caption h1 {font-size: 12vw !important;}
   .carousel-caption h2 {font-size: 8vw !important;}
   .carousel-caption p {font-size: 5vw !important;}
-  .item img {min-height: 80vh;}
+  .item img {
+    min-height: 80vh;
+    width: auto;
+  }
 }
 
 
