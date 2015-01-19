@@ -86,6 +86,7 @@ nav li a.active {
 }
 .carousel-caption h1 {font-size: 5rem;}
 .carousel-caption h2 {font-size: 3rem;}
+.carousel-caption h3 {font-size: 1.8rem;}
 .carousel-caption p {font-size: 1.5rem;}
 
 .carousel-control:hover,
@@ -355,6 +356,7 @@ a:link {
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .carousel-caption h1 {font-size: 12vw;}
   .carousel-caption h2 {font-size: 8vw;}
+  .carousel-caption h3 {font-size: 5vw !important;}
   .item img {
     min-height: 80vh;
     width: auto;
@@ -364,6 +366,7 @@ a:link {
 @media only screen and (max-width: 479px) {
   .carousel-caption h1 {font-size: 12vw !important;}
   .carousel-caption h2 {font-size: 8vw !important;}
+  .carousel-caption h3 {font-size: 5vw !important;}
   .carousel-caption p {font-size: 5vw !important;}
   .item img {
     min-height: 80vh;
