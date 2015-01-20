@@ -18,7 +18,10 @@ var videoCount = 1,
 
 function playNextVideo(){
   videoCount++;
-  if (videoCount === 4) {videoCount = 1; return videoPlayer.src = "img/video"+videoCount+".mp4";}
+  if (videoCount === 4) {
+    videoCount = 1; 
+    return videoPlayer.src = "img/video"+videoCount+".mp4";
+  }
   videoPlayer.src = "img/video"+videoCount+".mp4";
   videoPlayer.play();
 };
