@@ -3,20 +3,23 @@ include base
   section#promo
     .container
       h2.home-heading.text-center Promotional
-      mixin pro(title, src, desc, link)
+      mixin pro(title, src, desc, link, style, ...srcs)
         .col-md-4
           h3=title
           .pro-img
             img(src=src)
+            .brand-logos(style=style)
+              each sc in srcs
+                img(src=sc)
           p=desc
             br
             br
             a.btn.btn-primary(href=link target="_blank" role="button") View &#187;
       .row
-        +pro("Apparel Catalog", "img/promo1.jpg", "4Logo Apparel is a great way to shop for clothing by brand & category. 4Logo has numerous brands you can choose from.","http://www.4logoapparel.com/")
-        +pro("Promotional Products", "img/promo2.jpg", "These promotional products are not limited to just clothing, but rather a wide range of items that can be used every day.","http://azembroidme.norwood.com/")
-        +pro("Brand Book", "img/promo3.jpg", "Shopping for clothes on Brand Book is an efficient way to find the exact brands & products you're looking for.", "http://www.brandbookonline.com/vip")
+        +pro("Apparel Catalog", "img/promo1.jpg", "4Logo Apparel is a great way to shop for clothing by brand & category. 4Logo has numerous brands you can choose from.","http://www.4logoapparel.com/", "","http://www.4logoapparel.com/images/alp/millLarge/a4.jpg", "http://www.4logoapparel.com/images/alp/millLarge/wd.jpg", "http://www.4logoapparel.com/images/alp/millLarge/04.jpg","http://www.4logoapparel.com/images/alp/millLarge/38.jpg")
+        +pro("Promotional Products", "img/promo2.jpg", "These promotional products are not limited to just clothing, but rather a wide range of items that can be used every day.","http://azembroidme.norwood.com/", "padding-left: 10px", "https://lh4.googleusercontent.com/-kRKz2fbGRAM/U8xz2fKyJQI/AAAAAAAAAMQ/DBX281nHTuQ/s0-d/image002.png", "http://npbcc.org/wp-content/uploads/2011/10/callaway-logo1.jpg", "http://upload.wikimedia.org/wikipedia/en/1/1f/Taylormade_logo.png")
+        +pro("Brand Book", "img/promo3.jpg", "Shopping for clothes on Brand Book is an efficient way to find the exact brands & products you're looking for.", "http://www.brandbookonline.com/vip", "padding-left: 16px", "http://www.brandbookonline.com/96live/images/new_brands/brands_anvil.gif", "http://www.brandbookonline.com/96live/images/new_brands/brands_fol.gif", "http://www.brandbookonline.com/96live/images/new_brands/brands_UC_Platinum.gif", "http://www.brandbookonline.com/96live/images/new_brands/brands_hanes.gif")
       .row
-        +pro("Bag Products", "img/promo4.jpg", "Gemline is a streamlined, yet personalized shopping experience aimed at helping you find splendid bags & other products.","http://www.gemline.com/Gemline/")
-        +pro("Casual Wear", "img/promo5.jpg", "Shopping EmbroidMe via Company Casuals is an organized, direct method of shopping for the clothes & accessories that you've been searching for.","http://www.companycasuals.com/azembroidme/start.jsp")
-        +pro("Sports Wear", "img/promo6.jpg", "A superior sports-wear shopping experience, forsportswear.com is dedicated to delivering the widest range of sports apparel & accessories.","http://www.forsportswear.com/")
+        +pro("Bag Products", "img/promo4.jpg", "Gemline is a streamlined, yet personalized shopping experience aimed at helping you find splendid bags & other products.","http://www.gemline.com/Gemline/", "padding-left: 50px", "http://upload.wikimedia.org/wikipedia/commons/6/63/BrookStone_Logo.png", "http://creative.zebra.com/assets/images/download/ZebraHoriz.jpg")
+        +pro("Casual Wear", "img/promo5.jpg", "Shopping EmbroidMe via Company Casuals is an organized, direct method of shopping for the clothes & accessories that you've been searching for.","http://www.companycasuals.com/azembroidme/start.jsp", "padding-left: 45px", "http://img1.wikia.nocookie.net/__cb20140719113846/logopedia/images/0/0f/LogoEddieBauer.png", "http://ogio.com/skin/frontend/enterprise/ogio/images/ogio_logo.png")
+        +pro("Sports Wear", "img/promo6.jpg", "A superior sports-wear shopping experience, forsportswear.com is dedicated to delivering the widest range of sports apparel & accessories.","http://www.forsportswear.com/", "padding-left: 15px", "http://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Reebok_logo.svg/300px-Reebok_logo.svg.png", "http://upload.wikimedia.org/wikipedia/en/a/a6/Izod_logo_black.PNG")

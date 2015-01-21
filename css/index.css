@@ -68,15 +68,19 @@ nav li a.active {
 
 #intro-carousel {
   margin-top: 50px;
-  height: 550px;
+  height: 85vh;
   overflow: hidden;
+  border-bottom: 4px solid black;
+}
+.carousel-inner {
+  height: 100%;
 }
 .item {
-  height: 550px;
+  height: 100%;
 }
 .item img {
   position: absolute;
-  bottom: 0px;
+  top: 0px;
   min-width: 100%;
   height: auto;
 }
@@ -88,7 +92,9 @@ nav li a.active {
 .carousel-caption h2 {font-size: 3rem;}
 .carousel-caption h3 {font-size: 1.8rem;}
 .carousel-caption p {font-size: 1.5rem;}
-
+.carousel-caption h1, .carousel-caption h2, .carousel-caption h3, .carousel-caption p {
+  text-shadow: 2px 2px black;
+}
 .carousel-control:hover,
 .carousel-control:focus,
 .carousel-control.right,
@@ -175,14 +181,31 @@ blockquote p {
 #promo button {
   color: #777;
 }
+.btn-primary {
+  border: none;
+  border-radius: 0px;
+}
 .pro-img {
-  max-height: 200px;
+  max-height: 220px;
   max-width: 100%;
   border: 4px solid black;
   overflow: hidden
 }
 .pro-img img {
   width: 100%;
+}
+.brand-logos {
+  border-top: 4px solid black;
+  height: 44px;
+  padding: 2px 0px 2px 0px;
+}
+.brand-logos img {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+  margin: 0px 4px 0px 4px;
 }
 
 
@@ -342,8 +365,7 @@ a:link {
 
 @media only screen and (max-width: 990px) {
   .footer-col {text-align: center !important;}
-  .carousel-inner {height: 400px;}
-  .carousel-inner .item {height: 400px;}
+  #intro-carousel {height: 400px;}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {}
