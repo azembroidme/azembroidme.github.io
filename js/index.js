@@ -11,7 +11,9 @@ for (var i=0;i<actives.length;i++) {
   }
 }
 
-
+if (window.innerWidth < 600) {
+  $("#intro-carousel").carousel().height(document.querySelector(".item img").height)
+}
 
 var videoCount = 1,
     videoPlayer = document.querySelector("video");

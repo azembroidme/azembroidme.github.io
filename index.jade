@@ -16,7 +16,7 @@ include base
           img(src="img/nimg4.jpg" alt="Second slide")
           .carousel-caption
             h2 Excellent Craftsmanship
-            p EmbroidMe's professional embroiders relentlessly pursue exceptional quality with each product.
+            p EmbroidMe's professional embroiders relentlessly pursue exceptional quality with each product. We can work on pants, shirts, blouses, jackets, blazers, zippers, dresses, skirts, gowns, leathers & numerous other items.
         .item
           img(src="img/nimg5.jpg" alt="Third slide")
           .carousel-caption
@@ -37,7 +37,7 @@ include base
       hr
       +limg("Outerwear & Team Wear", "Our proficient embroiders can provide unparalleled quality in outerwear & team wear embroidery. Need your team's logo on custom clothing? We'll fill that need with unrivaled embroidery.", "img/nimg6.jpg")
       hr
-      +rimg("Wedding & Social Stationery", "Looking for unique & beautiful stationery? EmbroidMe excels at designing & creating stationery that accurately reflects your event & will leave a lasting impression upon those who recieve them.", "img/wedding.png")
+      +rimg("Wedding & Social Stationery", "Looking for unique & beautiful stationery? EmbroidMe excels at designing & creating stationery that accurately reflects your event & will leave a lasting impression upon those who recieve them. To see our wedding products and services, visit <a href='http://weddingsaz.carlsoncraft.com/index.jsp'>weddingsaz.carlsoncraft.com</a>.", "img/wedding.png")
       hr
       .row
         video(controls onended="playNextVideo()"): source(src="img/video1.mp4" type="video/mp4")
@@ -46,14 +46,14 @@ include base
     .container
       h2.home-heading.text-center Gallery
       .row
-        .col-md-3: img(src="http://www.azembroidme.com/admin/upload/1384654741.jpg")
-        .col-md-3: img(src="http://www.azembroidme.com/admin/upload/1384654788.jpg")
-        .col-md-3: img(src="http://www.azembroidme.com/admin/upload/1384654865.jpg")
-        .col-md-3: img(src="http://www.azembroidme.com/admin/upload/1384655054.jpg")
+        .col-md-3: img(type="button" data-toggle="modal" data-target="#im1" src="img/im1.jpg")
+        .col-md-3: img(type="button" data-toggle="modal" data-target="#im2" src="img/im2.jpg")
+        .col-md-3: img(type="button" data-toggle="modal" data-target="#im3" src="img/im3.jpg")
+        .col-md-3: img(type="button" data-toggle="modal" data-target="#im4" src="img/im4.jpg")
       .row
-        .col-md-3: img(src="http://www.azembroidme.com/admin/upload/1384467451.jpg")
-        .col-md-3: img(src="http://www.azembroidme.com/admin/upload/1384466095.jpg")
-        .col-md-6: img#truck(src="http://www.azembroidme.com/admin/upload/1384655154.jpg")
+        .col-md-3: img(type="button" data-toggle="modal" data-target="#im5" src="img/im5.jpg")
+        .col-md-3: img(type="button" data-toggle="modal" data-target="#im6" src="img/im6.jpg")
+        .col-md-6: img#truck(type="button" data-toggle="modal" data-target="#im7" src="img/im7.jpg")
 
   section#reviews
     .container
@@ -68,4 +68,13 @@ include base
         .col-md-4
           h3.featurette-heading.text-center George
           blockquote: p.lead It's easy to get excited when working with EmbroidMe again. Their cost-effective solutions are first-rate.
+
+
+  +img-modal("im1", "img/im1.jpg")
+  +img-modal("im2", "img/im2.jpg")
+  +img-modal("im3", "img/im3.jpg")
+  +img-modal("im4", "img/im4.jpg")
+  +img-modal("im5", "img/im5.jpg")
+  +img-modal("im6", "img/im6.jpg")
+  +img-modal("im7", "img/im7.jpg")
 
