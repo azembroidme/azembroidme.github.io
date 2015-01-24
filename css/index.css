@@ -46,7 +46,7 @@ nav li a {
 }
 nav li a:hover,
 nav li a.active {
-  color: #fed136 !important;
+  color: #d9534f !important;
   background: black !important;
 }
 .navbar-header, #navbar, #navbar ul, #navbar ul a {
@@ -172,7 +172,7 @@ nav li a.active {
   transition: border .25s ease;
 }
 #gallery img:hover {
-  border: 8px solid #fed136;
+  border: 8px solid #d9534f;
 }
 
 #truck {
@@ -193,7 +193,7 @@ nav li a.active {
   width: 50%;
   margin: 0 auto;
 }
-.modal-body #truck {
+.modal-body img[src="img/im7.jpg"] {
   width: 80%;
   margin: 0 auto;
 }
@@ -224,6 +224,10 @@ blockquote p {
 #promo button {
   color: #777;
 }
+#promo .btn-primary {
+  background-color: #d9534f !important;
+}
+
 .btn-primary {
   border: none;
   border-radius: 0px;
@@ -299,7 +303,7 @@ blockquote p {
 }
 
 .product:hover {
-  border: 8px solid #fed136;
+  border: 8px solid #d9534f;
 }
 .product:hover a {
   /*display: block;*/
@@ -325,6 +329,7 @@ blockquote p {
 
 footer {
   font-size: 1.1rem;
+  color: black;
 }
 
 footer a {
@@ -340,7 +345,7 @@ footer p i.fa {
 }
 
 .footer-above {
-  background-color: #fed136;
+  background-color: #d9534f;
   padding-bottom: 25px;
 }
 .footer-below {
@@ -376,12 +381,12 @@ footer p i.fa {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px black;
-    color: #fed136;
+    color: #d9534f;
     background: black;
 }
 
 a {
-  color: #fed136;
+  color: #d9534f;
 }
 a:hover {
   color: black;
@@ -485,7 +490,7 @@ a, button {
 .hfx:hover::before,
 .hfx.active::before {
   opacity: 1;
-  border-color: #fed136;
+  border-color: #d9534f;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);
