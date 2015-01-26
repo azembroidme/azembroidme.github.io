@@ -93,11 +93,6 @@ nav li a.active {
   overflow: hidden;
 }
 
-.coll .carousel-caption {
-  /*position: absolute;*/
-  /*top: 40%;*/
-}
-
 .coll img {
   position:relative;
   float: left;
