@@ -74,7 +74,7 @@ nav li a.active {
 
 #intro-carousel {
   margin-top: 60px;
-  height: 75vh;
+  height: 68vh;
   overflow: hidden;
   border-bottom: 4px solid black;
 }
@@ -89,6 +89,25 @@ nav li a.active {
   top: 0px;
   width: 100%;
 }
+.coll {
+  overflow: hidden;
+}
+
+.coll .carousel-caption {
+  /*position: absolute;*/
+  /*top: 40%;*/
+}
+
+.coll img {
+  position:relative;
+  float: left;
+  top: 0px;
+  width: 33.33333333%;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+
+}
+
 .carousel-caption {
   text-align: left;
   left: 10%;
@@ -422,6 +441,12 @@ a, button {
 
 
 
+@media only screen and (max-width: 1420px) {
+  .coll img {width: 50%;}
+}
+@media only screen and (max-width: 720px) {
+  .coll img {width: 100%;}
+}
 
 @media only screen and (max-width: 990px) {
   .footer-col {text-align: center !important;}
