@@ -97,10 +97,9 @@ nav li a.active {
   position:relative;
   float: left;
   top: 0px;
-  width: 33.33333333%;
+  width: 50%;
   border-left: 2px solid black;
   border-right: 2px solid black;
-
 }
 
 .carousel-caption {
