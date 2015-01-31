@@ -3,18 +3,18 @@ include base
   section#intro
     #intro-carousel.carousel.slide(data-ride="carousel")
       ol.carousel-indicators
-        li(data-target="#intro-carousel" data-slide-to="0")
+        li.active(data-target="#intro-carousel" data-slide-to="0")
         li(data-target="#intro-carousel" data-slide-to="1")
-        li.active(data-target="#intro-carousel" data-slide-to="2")
+        li(data-target="#intro-carousel" data-slide-to="2")
+        li#last-tab(data-target="#intro-carousel" data-slide-to="3")
       .carousel-inner(role="listbox")
         .item.active
           img(src="img/ray2.jpg" alt="First slide")
           .carousel-caption.text-left
             h2 Located in Scottsdale
             p As one of the few Scottsdale-based embroiders, EmbroidMe offers an unrivaled penchant for cost-effective quality.
-        .item.coll
+        .item
           img(src="img/nimg4.jpg" alt="Second slide")
-          img(src="img/ray6.jpg" alt="Second slide")
           .carousel-caption
             h2 Excellent Craftsmanship
             p EmbroidMe's professional embroiders relentlessly pursue exceptional quality. We aim to exceed your expectations with each product.
@@ -24,6 +24,11 @@ include base
           .carousel-caption
             h2 Alteration & Tailoring
             p We deliver exceptional work with shirts, blouses, jackets, blazers, zippers, dresses, skirts, gowns, leathers & numerous other items.
+        #last-slide.item
+          img(src="img/nimg5.jpg" alt="Fourth slide")
+          .carousel-caption
+            h2 Complete Packages
+            p EmbroidMe is a team of professionals that works with businesses & organizations of all sizes to develop custom apparels & promotional accessories. We are able to serve the customer who wants one piece to 10,000! Complete packages available: embroidery & monogramming, screen printing & digital sublimation, rhine stone & weaving, banner & business cards, ingraining & flex light, over 700,000 promotional products & blanket, curtain, pillow, table cloth printing & more!
       a.left.carousel-control(href="#intro-carousel" role="button" data-slide="prev")
         span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
         span.sr-only Previous
@@ -39,7 +44,7 @@ include base
       hr
       +limg("Outerwear & Team Wear", "Our proficient embroiders can provide unparalleled quality in outerwear & team wear embroidery. Need your team's logo on custom clothing? We'll fill that need with unrivaled embroidery.", "img/nimg6.jpg")
       hr
-      +rimg("Wedding & Social Stationery", "Looking for unique & beautiful stationery? EmbroidMe excels at designing & creating stationery that accurately reflects your event & will leave a lasting impression upon those who recieve them. To see our wedding products and services, visit <a href='http://weddingsaz.carlsoncraft.com/index.jsp'>weddingsaz.carlsoncraft.com</a>.", "img/wedding.png")
+      +rimg("Wedding & Social Stationery", "Looking for unique & beautiful stationery? EmbroidMe excels at designing & creating stationery that accurately reflects your event & will leave a lasting impression upon those who recieve them. To see our wedding products & services, visit <a href='http://weddingsaz.carlsoncraft.com/index.jsp'>weddingsaz.carlsoncraft.com</a>.", "img/wedding.png")
       hr
       .row
         video(controls onended="playNextVideo()"): source(src="img/video1.mp4" type="video/mp4")
