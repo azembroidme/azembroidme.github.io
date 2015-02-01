@@ -14,7 +14,7 @@ for (var i=0;i<actives.length;i++) {
 if (window.innerWidth < 600) {
   $("#last-tab").remove()
   $("#last-slide").remove()
-  $("#intro-carousel").carousel().height(document.querySelector(".item img").height)
+  $("#intro-carousel").carousel().height(document.querySelector(".item img").height/1.6)
 }
 
 var videoCount  = 1,
