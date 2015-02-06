@@ -147,7 +147,7 @@ nav li a.active {
 
 
 
-#services, #reviews, #products, #contact, #gallery {
+#services, #reviews, #products, #contact, #gallery, #coupon {
   position: relative;
   padding: 50px 0 50px 0;
 }
@@ -191,6 +191,25 @@ nav li a.active {
 #truck {
   width: 100%;
 }
+
+
+#coupon img {
+  width: 260px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+#coupon ul {
+  list-style: none;
+  padding: 0;
+}
+
+#coupon .cutout {
+  border: 4px dashed black;
+  margin: 75px 0 75px 0;
+}
+
+
 
 .modal-dialog {
   width: 75%;
